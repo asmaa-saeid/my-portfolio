@@ -17,16 +17,6 @@ A modern, responsive portfolio website showcasing my projects, technical skills,
 
 ---
 
-## Preview
-
-> Replace the image below with a screenshot of your portfolio.
-
-<p align="center">
-<img src="" alt="Portfolio Preview" width="900">
-</p>
-
----
-
 ## Live Demo
 
 **Portfolio Website**
@@ -77,8 +67,6 @@ Portfolio/
 ├── index.html
 ├── style.css
 ├── script.js
-├── images/
-│   └── portfolio-preview.png
 └── README.md
 ```
 
@@ -135,12 +123,4 @@ https://github.com/asmaa-saeid
 
 ---
 
-## Contact
 
-If you have any questions, collaboration opportunities, or internship offers, feel free to connect with me through LinkedIn or the contact form available on the portfolio.
-
----
-
-<p align="center">
-Developed with ❤️ by <strong>Asmaa Elattar</strong>
-</p>
