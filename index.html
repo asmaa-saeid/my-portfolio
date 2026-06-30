@@ -1,99 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Asmaa Elattar | Portfolio</title>
 
-<meta charset="UTF-8">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<title>Asmaa Elattar | Portfolio</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
+<!-- Header -->
 <header>
-
-<div class="logo">
-
-Asmaa<span>.</span>
-
-</div>
-
-<nav>
-
-<a href="#home">Home</a>
-
-<a href="#about">About</a>
-
-<a href="#skills">Skills</a>
-
-<a href="#projects">Projects</a>
-
-<a href="#contact">Contact</a>
-
-</nav>
-
+  <div class="container">
+    <h1 class="logo">Asmaa</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
-<section class="hero" id="home">
-
-<div class="left">
-
-<h3>Hello, I'm</h3>
-
-<h1>Asmaa Elattar</h1>
-
-<h2>Computer Science Student</h2>
-
-<p>
-
-Passionate about Artificial Intelligence,
-Machine Learning,
-Computer Vision,
-Software Development,
-and building real-world applications.
-
-</p>
-
-<div class="buttons">
-
-<a href="files/Asmaa_Elattar_CV.pdf" class="btn">
-
-Download CV
-
-</a>
-
-<a href="https://github.com/asmaa-saeid"
-
-target="_blank"
-
-class="btn-outline">
-
-GitHub
-
-</a>
-
-</div>
-
-</div>
-
-<div class="right">
-
-<img src="images/profile.jpg">
-
-</div>
-
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h2>Hello, I'm <span>Asmaa Elattar</span></h2>
+    <p>Computer Science Student | AI & Web Developer</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </div>
 </section>
+
+<!-- About -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    I am a Computer Science student interested in Artificial Intelligence, Computer Vision, 
+    and Full Stack Web Development. I enjoy building real-world projects and improving my skills every day.
+  </p>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="section dark">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div>HTML</div>
+    <div>CSS</div>
+    <div>JavaScript</div>
+    <div>Python</div>
+    <div>C++</div>
+    <div>Git & GitHub</div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="projects">
+    <div class="card">
+      <h3>Smart Parking System</h3>
+      <p>IoT + Web system for managing parking slots efficiently.</p>
+    </div>
+
+    <div class="card">
+      <h3>Face Attendance System</h3>
+      <p>AI-based attendance system using face recognition.</p>
+    </div>
+
+    <div class="card">
+      <h3>Portfolio Website</h3>
+      <p>Responsive personal portfolio using HTML, CSS, JS.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section dark">
+  <h2>Contact Me</h2>
+
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2026 Asmaa Elattar. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
