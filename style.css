@@ -6,10 +6,12 @@
   font-family: 'Poppins', sans-serif;
 }
 
+/* Body */
 body {
   line-height: 1.6;
-  color: #0f172a;
-  background: #f8fafc;
+  color: #1f2937;
+  background: #f3f4f6;
+  scroll-behavior: smooth;
 }
 
 /* Container */
@@ -18,14 +20,15 @@ body {
   margin: auto;
 }
 
-/* Header */
+/* HEADER */
 header {
-  background: #0f172a;
-  color: white;
+  background: #ffffff;
+  color: #1f2937;
   padding: 15px 0;
   position: sticky;
   top: 0;
   z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 header .container {
@@ -35,8 +38,9 @@ header .container {
 }
 
 .logo {
-  color: #38bdf8;
+  color: #4f46e5;
   font-size: 24px;
+  font-weight: bold;
 }
 
 nav ul {
@@ -46,55 +50,59 @@ nav ul {
 }
 
 nav a {
-  color: white;
   text-decoration: none;
+  color: #1f2937;
   transition: 0.3s;
+  font-weight: 500;
 }
 
-nav a:hover {
-  color: #38bdf8;
+nav a:hover,
+nav a.active {
+  color: #4f46e5;
 }
 
-/* Hero */
+/* HERO */
 .hero {
   height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(135deg, #0f172a, #1e3a8a);
-  color: white;
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  color: #1f2937;
 }
 
 .hero h2 {
-  font-size: 40px;
+  font-size: 42px;
 }
 
 .hero span {
-  color: #38bdf8;
+  color: #4f46e5;
 }
 
 .hero p {
   margin: 15px 0;
+  color: #6b7280;
 }
 
+/* BUTTON */
 .btn {
   display: inline-block;
   padding: 10px 25px;
-  background: #38bdf8;
-  color: #0f172a;
+  background: #4f46e5;
+  color: white;
   border-radius: 25px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
   transition: 0.3s;
 }
 
 .btn:hover {
-  background: white;
-  color: #0f172a;
+  background: #3730a3;
+  transform: translateY(-2px);
 }
 
-/* Sections */
+/* SECTIONS */
 .section {
   padding: 70px 20px;
   text-align: center;
@@ -102,33 +110,38 @@ nav a:hover {
 
 .section h2 {
   margin-bottom: 20px;
-  font-size: 30px;
-  color: #0f172a;
+  font-size: 32px;
+  color: #111827;
+}
+
+.section p {
+  color: #6b7280;
+  max-width: 700px;
+  margin: auto;
 }
 
 .section.dark {
-  background: #0f172a;
-  color: white;
+  background: #ffffff;
 }
 
-/* Skills */
+/* SKILLS */
 .skills {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  gap: 12px;
   margin-top: 20px;
 }
 
 .skills div {
-  background: #38bdf8;
-  color: #0f172a;
+  background: #eef2ff;
+  color: #3730a3;
   padding: 10px 15px;
   border-radius: 20px;
   font-weight: 500;
 }
 
-/* Projects */
+/* PROJECTS */
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -137,10 +150,10 @@ nav a:hover {
 }
 
 .card {
-  background: white;
+  background: #ffffff;
   padding: 20px;
   border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
   transition: 0.3s;
 }
 
@@ -148,7 +161,7 @@ nav a:hover {
   transform: translateY(-5px);
 }
 
-/* Contact */
+/* CONTACT */
 form {
   display: flex;
   flex-direction: column;
@@ -160,29 +173,56 @@ form {
 form input,
 form textarea {
   padding: 12px;
-  border: none;
+  border: 1px solid #e5e7eb;
   border-radius: 10px;
+  outline: none;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #4f46e5;
 }
 
 form button {
   padding: 12px;
-  background: #38bdf8;
+  background: #4f46e5;
+  color: white;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
-/* Footer */
+form button:hover {
+  background: #3730a3;
+}
+
+/* FOOTER */
 footer {
-  background: #0f172a;
-  color: white;
+  background: #ffffff;
+  color: #6b7280;
   text-align: center;
   padding: 20px;
   margin-top: 40px;
+  border-top: 1px solid #e5e7eb;
 }
 
-/* Responsive */
+/* ANIMATION */
+.section,
+.card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.section.show,
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
