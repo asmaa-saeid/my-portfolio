@@ -36,9 +36,30 @@
 <!-- Hero Section -->
 <section id="home" class="hero">
   <div class="hero-content">
-    <h2>Hello, I'm <span>Asmaa Elattar</span></h2>
-    <p>Computer Science Student | AI & Web Developer</p>
-    <a href="#projects" class="btn">View My Work</a>
+
+    <p class="intro">👋 Hello, I'm</p>
+
+    <h1 class="name">
+      Asmaa Elattar
+    </h1>
+
+    <h3 class="title">
+      Computer Science Student
+    </h3>
+
+    <p class="subtitle">
+      AI Enthusiast • Front-End Developer • Problem Solver
+    </p>
+
+    <p class="description">
+      I build modern web applications and AI-powered systems with a focus on clean design, performance, and user experience.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#projects" class="btn primary">View Projects</a>
+      <a href="cv.pdf" class="btn secondary">Download CV</a>
+    </div>
+
   </div>
 </section>
 
@@ -59,7 +80,7 @@
     <div>CSS</div>
     <div>JavaScript</div>
     <div>C++</div>
-    <div> GitHub</div>
+    <div>GitHub</div>
   </div>
 </section>
 
@@ -102,6 +123,34 @@
   <p>© 2026 Asmaa Elattar. All Rights Reserved.</p>
 </footer>
 
+<!-- Scripts -->
+<script src="script.js"></script>
+
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+  (function(){
+    emailjs.init("EwQaz3QwTC-M_6cDi");
+  })();
+</script>
+
+<script>
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.send("service_llx3q8h", "template_4dcwlkf", {
+        from_name: document.querySelector("input[type='text']").value,
+        from_email: document.querySelector("input[type='email']").value,
+        message: document.querySelector("textarea").value,
+    })
+
+    .then(function() {
+        alert("Message sent successfully!");
+    }, function(error) {
+        alert("Failed to send message");
+        console.log(error);
+    });
 <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>
