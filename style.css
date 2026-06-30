@@ -9,14 +9,18 @@
 }
 
 :root {
-  --primary: #7C9AB8;
-  --primary-dark: #5F7F9D;
-  --background: #FAFBFC;
+  --primary: #3B82F6;        /* Blue واضح واحترافي */
+  --primary-dark: #2563EB;   /* أغمق شويه للhover */
+
+  --background: #F8FAFC;
   --section: #FFFFFF;
-  --text: #2F3A45;
+
+  --text: #1F2937;
   --text-light: #6B7280;
-  --border: #E8EDF3;
-  --shadow: 0 10px 30px rgba(0,0,0,.05);
+
+  --border: #E5E7EB;
+
+  --shadow: 0 10px 30px rgba(0,0,0,.06);
 }
 
 body {
