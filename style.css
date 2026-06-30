@@ -346,4 +346,29 @@ footer {
   .hero-buttons {
     flex-direction: column;
   }
+   /* ===== Fix Social Links ===== */
+.social-links a{
+    color: #1F2937 !important;
+    background: #ffffff;
+    border: 1px solid #E5E7EB;
+    font-weight: 600;
+}
+
+.social-links a:visited{
+    color: #1F2937 !important;
+}
+
+.social-links a i{
+    color: inherit;
+}
+
+.social-links .github:hover{
+    background:#24292F;
+    color:#fff !important;
+}
+
+.social-links .linkedin:hover{
+    background:#0A66C2;
+    color:#fff !important;
+}
 }
