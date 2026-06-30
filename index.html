@@ -103,5 +103,29 @@
 </footer>
 
 <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+  (function(){
+    emailjs.init("EwQaz3QwTC-M_6cDi");
+  })();
+</script>
+  <script>
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.send("service_llx3q8h", "template_4dcwlkf", {
+        from_name: document.querySelector("input[type='text']").value,
+        from_email: document.querySelector("input[type='email']").value,
+        message: document.querySelector("textarea").value,
+    })
+
+    .then(function() {
+        alert("Message sent successfully!");
+    }, function(error) {
+        alert("Failed to send message");
+        console.log(error);
+    });
+});
+</script>
 </body>
 </html>
