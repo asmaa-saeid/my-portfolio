@@ -163,45 +163,70 @@ nav a:hover {
 /* =======================
    SOCIAL LINKS (NEW)
 ======================= */
+/* =======================
+   SOCIAL BUTTONS
+======================= */
+
+.social-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
 .social {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 
-  padding: 12px 20px;
-  min-width: 150px;
-  height: 48px;
+    padding: 14px 24px;
+    min-width: 170px;
+    height: 52px;
 
-  border-radius: 12px;
-  text-decoration: none;
+    border-radius: 14px;
 
-  font-size: 16px;
-  font-weight: 600;
+    font-size: 16px;
+    font-weight: 600;
 
-  color: #1F2937;
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid var(--border);
-  backdrop-filter: blur(10px);
+    text-decoration: none;
 
-  transition: all .3s ease;
-  box-shadow: 0 5px 15px rgba(0,0,0,.05);
+    transition: all .35s ease;
+}
+
+/* GitHub */
+
+.github{
+    background:#24292F;
+    color:white;
+    border:2px solid #24292F;
+}
+
+.github:hover{
+    background:white;
+    color:#24292F;
+    transform:translateY(-5px);
+    box-shadow:0 12px 30px rgba(36,41,47,.25);
+}
+
+/* LinkedIn */
+
+.linkedin{
+    background:#0A66C2;
+    color:white;
+    border:2px solid #0A66C2;
+}
+
+.linkedin:hover{
+    background:white;
+    color:#0A66C2;
+    transform:translateY(-5px);
+    box-shadow:0 12px 30px rgba(10,102,194,.25);
 }
 
 .social i{
-  font-size: 20px;
-}
-
-.social.github:hover{
-  background:#24292F;
-  color:white;
-  transform:translateY(-4px);
-}
-
-.social.linkedin:hover{
-  background:#0A66C2;
-  color:white;
-  transform:translateY(-4px);
+    font-size:22px;
 }
 
 /* GitHub */
