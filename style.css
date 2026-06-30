@@ -191,7 +191,7 @@ nav a:hover {
 /* GitHub */
 .social.github:hover {
   background: #111827;
-  color: white;
+  color: #24292F;
   transform: translateY(-5px) scale(1.1);
   box-shadow: 0 10px 25px rgba(17, 24, 39, 0.3);
 }
@@ -199,7 +199,7 @@ nav a:hover {
 /* LinkedIn */
 .social.linkedin:hover {
   background: #0A66C2;
-  color: white;
+   color: #0A66C2;
   transform: translateY(-5px) scale(1.1);
   box-shadow: 0 10px 25px rgba(10, 102, 194, 0.3);
 }
