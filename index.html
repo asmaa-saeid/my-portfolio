@@ -1,156 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Asmaa Elattar | Portfolio</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Arial, Helvetica, sans-serif;
-        }
+    <link rel="stylesheet" href="style.css">
 
-        body{
-            background:#f4f8ff;
-            color:#333;
-        }
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        header{
-            background:#0d6efd;
-            color:white;
-            text-align:center;
-            padding:70px 20px;
-        }
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-        header h1{
-            font-size:48px;
-            margin-bottom:10px;
-        }
-
-        header p{
-            font-size:20px;
-        }
-
-        section{
-            max-width:1000px;
-            margin:auto;
-            padding:60px 20px;
-        }
-
-        h2{
-            color:#0d6efd;
-            margin-bottom:20px;
-        }
-
-        .card{
-            background:white;
-            padding:25px;
-            border-radius:15px;
-            box-shadow:0 5px 15px rgba(0,0,0,.1);
-            margin-bottom:25px;
-        }
-
-        ul{
-            padding-left:20px;
-        }
-
-        footer{
-            background:#0d6efd;
-            color:white;
-            text-align:center;
-            padding:20px;
-        }
-
-        a{
-            color:#0d6efd;
-            text-decoration:none;
-        }
-
-        .btn{
-            display:inline-block;
-            background:white;
-            color:#0d6efd;
-            padding:12px 25px;
-            margin-top:20px;
-            border-radius:8px;
-            font-weight:bold;
-        }
-    </style>
 </head>
 
 <body>
 
-<header>
+    <!-- ================= NAVBAR ================= -->
 
-<h1>Asmaa Elattar</h1>
+    <header>
 
-<p>Computer Science Student | AI & Software Developer</p>
+        <div class="logo">
 
-<a class="btn" href="#">Download CV</a>
+            Asmaa<span>.</span>
 
-</header>
+        </div>
 
-<section>
+        <nav>
 
-<div class="card">
+            <a href="#home">Home</a>
 
-<h2>About Me</h2>
+            <a href="#about">About</a>
 
-<p>
-I am a Computer Science student passionate about Artificial Intelligence,
-Machine Learning, Computer Vision, and Software Development.
-I enjoy building practical projects and continuously improving my skills.
-</p>
+            <a href="#skills">Skills</a>
 
-</div>
+            <a href="#projects">Projects</a>
 
-<div class="card">
+            <a href="#contact">Contact</a>
 
-<h2>Skills</h2>
+        </nav>
 
-<ul>
-<li>Java</li>
-<li>C++</li>
-<li>Python</li>
-<li>SQL</li>
-<li>Git & GitHub</li>
-</ul>
+        <div class="theme-btn">
 
-</div>
+            <i class="fa-solid fa-moon"></i>
 
-<div class="card">
+        </div>
 
-<h2>Projects</h2>
+    </header>
 
-<ul>
-<li>Smart Parking System</li>
-<li>Face Attendance System</li>
-</ul>
 
-</div>
+    <!-- ================= HERO ================= -->
 
-<div class="card">
+    <section class="hero" id="home">
 
-<h2>Contact</h2>
+        <div class="hero-text">
 
-<p>Email: your-email@example.com</p>
+            <h3>Hello, I'm</h3>
 
-<p>GitHub: github.com/asmaa-saeid</p>
+            <h1>Asmaa Elattar</h1>
 
-<p>LinkedIn: Your LinkedIn</p>
+            <h2>Computer Science Student</h2>
 
-</div>
+            <p>
 
-</section>
+                Passionate about Artificial Intelligence,
+                Machine Learning,
+                Computer Vision,
+                and Software Development.
 
-<footer>
+            </p>
 
-© 2026 Asmaa Elattar. All Rights Reserved.
+            <div class="buttons">
 
-</footer>
+                <a href="files/Asmaa_Elattar_CV.pdf" class="btn">
+
+                    Download CV
+
+                </a>
+
+                <a href="https://github.com/asmaa-saeid"
+                    target="_blank"
+                    class="btn-outline">
+
+                    GitHub
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="images/profile.jpg" alt="Profile">
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about" id="about">
+
+        <h2 class="title">
+
+            About Me
+
+        </h2>
+
+        <p>
+
+            I am a Computer Science student with a strong interest in Artificial Intelligence,
+            Machine Learning,
+            Computer Vision,
+            and Software Development.
+
+            I enjoy solving real-world problems through technology and continuously improving my technical and problem-solving skills by building practical projects.
+
+            Currently, I am seeking internship opportunities where I can learn from experienced engineers and contribute to impactful software solutions.
+
+        </p>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills">
+
+        <h2 class="title">
+
+            Technical Skills
+
+        </h2>
+
+        <div class="skills-container">
+
+            <div class="skill-card">
+
+                <i class="fa-brands fa-java"></i>
+
+                <h3>Java</h3>
+
+            </div>
+
+            <div class="skill-card">
+
+                <i class="fa-solid fa-code"></i>
+
+                <h3>C++</h3>
+
+            </div>
+
+            <div class="skill-card">
+
+                <i class="fa-brands fa-python"></i>
+
+                <h3>Python</h3>
+
+            </div>
+
+            <div class="skill-card">
+
+                <i class="fa-solid fa-database"></i>
+
+                <h3>SQL</h3>
+
+            </div>
+
+            <div class="skill-card">
+
+                <i class="fa-brands fa-git-alt"></i>
+
+                <h3>Git</h3>
+
+            </div>
+
+            <div class="skill-card">
+
+                <i class="fa-brands fa-github"></i>
+
+                <h3>GitHub</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects">
+
+        <h2 class="title">
+
+            Featured Projects
+
+        </h2>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+
+                <img src="images/parking.png" alt="Project">
+
+                <h3>
+
+                    Smart Parking System
+
+                </h3>
+
+                <p>
+
+                    A parking management system developed using Data Structures concepts to organize and manage parking operations efficiently.
+
+                </p>
+
+                <a href="#" class="project-btn">
+
+                    View Project
+
+                </a>
+
+            </div>
+
+            <div class="project-card">
+
+                <img src="images/attendance.png" alt="Project">
+
+                <h3>
+
+                    Face Attendance System
+
+                </h3>
+
+                <p>
+
+                    Face Recognition-based attendance system using Python and OpenCV for automatic student attendance tracking.
+
+                </p>
+
+                <a href="#" class="project-btn">
+
+                    View Project
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact">
+
+        <h2 class="title">
+
+            Contact Me
+
+        </h2>
+
+        <div class="contact-container">
+
+            <div>
+
+                <i class="fa-solid fa-envelope"></i>
+
+                your-email@example.com
+
+            </div>
+
+            <div>
+
+                <i class="fa-brands fa-linkedin"></i>
+
+                linkedin.com/in/your-linkedin
+
+            </div>
+
+            <div>
+
+                <i class="fa-brands fa-github"></i>
+
+                github.com/asmaa-saeid
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        © 2026 Asmaa Elattar | All Rights Reserved.
+
+    </footer>
+
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
