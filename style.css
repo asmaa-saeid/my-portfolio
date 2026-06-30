@@ -163,29 +163,45 @@ nav a:hover {
 /* =======================
    SOCIAL LINKS (NEW)
 ======================= */
-.social-links {
-  margin-top: 25px;
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-}
-
-/* base icon style */
 .social {
-  width: 45px;
-  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
+
+  padding: 12px 20px;
+  min-width: 150px;
+  height: 48px;
+
   border-radius: 12px;
   text-decoration: none;
-  font-size: 20px;
-  color: var(--text);
-  background: rgba(255, 255, 255, 0.8);
+
+  font-size: 16px;
+  font-weight: 600;
+
+  color: #1F2937;
+  background: rgba(255, 255, 255, 0.9);
   border: 1px solid var(--border);
   backdrop-filter: blur(10px);
-  transition: 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+
+  transition: all .3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,.05);
+}
+
+.social i{
+  font-size: 20px;
+}
+
+.social.github:hover{
+  background:#24292F;
+  color:white;
+  transform:translateY(-4px);
+}
+
+.social.linkedin:hover{
+  background:#0A66C2;
+  color:white;
+  transform:translateY(-4px);
 }
 
 /* GitHub */
