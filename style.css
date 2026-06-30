@@ -164,34 +164,45 @@ nav a:hover {
    SOCIAL LINKS (NEW)
 ======================= */
 .social-links {
-  margin-top: 20px;
+  margin-top: 25px;
   display: flex;
   justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
+  gap: 18px;
 }
 
-.social-links a {
-  text-decoration: none;
-  color: var(--text);
-  font-size: 14px;
+/* base icon style */
+.social {
+  width: 45px;
+  height: 45px;
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 15px;
+  justify-content: center;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.8);
   border: 1px solid var(--border);
-  border-radius: 10px;
-  transition: 0.3s;
-  background: white;
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
-.social-links a:hover {
-  border-color: var(--primary);
-  color: var(--primary);
-  transform: translateY(-3px);
-  box-shadow: var(--shadow);
+/* GitHub */
+.social.github:hover {
+  background: #111827;
+  color: white;
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 10px 25px rgba(17, 24, 39, 0.3);
 }
 
+/* LinkedIn */
+.social.linkedin:hover {
+  background: #0A66C2;
+  color: white;
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 10px 25px rgba(10, 102, 194, 0.3);
+}
 /* =======================
    SECTIONS
 ======================= */
